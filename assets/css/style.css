@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   background-color: #c4c4c4;
+  font-family: "Poppins", sans-serif;
 }
 ul {
   list-style: none;
@@ -39,4 +40,24 @@ ul {
   text-decoration: none;
   color: black;
   text-transform: capitalize;
+}
+.parent-grid {
+  display: grid;
+  grid-template-columns: 1fr, 3fr;
+  grid-auto-rows: minmax(100px, auto);
+  column-gap: 52px;
+  row-gap: 36px;
+}
+.main-photo {
+  grid-column: 2 / span 3;
+  grid-row: 1 / span2;
+  position: relative;
+}
+
+.villas {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  column-gap: 52px;
+  row-gap: 36px;
 }
