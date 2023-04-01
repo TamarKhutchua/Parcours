@@ -7,6 +7,13 @@
 ul {
   list-style: none;
 }
+body {
+  background-color: #c4c4c4;
+}
+.form-row span,
+.form-row-price span {
+  opacity: 0.5;
+}
 .container {
   max-width: 1920px;
   width: 100%;
@@ -50,8 +57,14 @@ ul {
 .main-photo {
   grid-column: 2 / span 3;
   grid-row: 1 / span2;
+  position: relative;
 }
-
+.main-photo p {
+  position: absolute;
+}
+.navsearch img {
+  position: absolute;
+}
 .villas {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
