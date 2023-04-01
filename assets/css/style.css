@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #c4c4c4;
   font-family: "Poppins", sans-serif;
 }
 ul {
@@ -51,7 +50,6 @@ ul {
 .main-photo {
   grid-column: 2 / span 3;
   grid-row: 1 / span2;
-  position: relative;
 }
 
 .villas {
@@ -60,4 +58,80 @@ ul {
   grid-auto-rows: minmax(100px, auto);
   column-gap: 52px;
   row-gap: 36px;
+}
+.villas article {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  background-color: #f8f8f8;
+  border-radius: 24px;
+}
+article img {
+  margin: 16px auto;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.vip {
+  padding: 6px 11px;
+  background: #29b24e;
+  border-radius: 15px;
+  color: #ffffff;
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+  position: absolute;
+  left: 12px;
+  top: 12px;
+}
+.bookmark {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 4px;
+  bottom: -20px;
+  background-color: #ffffff;
+  box-shadow: -2px 4px 20px rgba(109, 109, 109, 0.25);
+  border-radius: 50%;
+}
+article h3 {
+  margin: 0px 20px 0px 20px;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  color: #000000;
+}
+article h4 {
+  margin: 8px 20px 0px 20px;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  color: #000000;
+  opacity: 0.5;
+}
+.price {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 15px;
+}
+.price span {
+  color: #29b24e;
+  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+}
+.price p {
+  color: #000000;
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+  opacity: 1;
+}
+article hr {
+  margin-top: 16px;
+  border: 1px solid #cfead6;
+}
+.details {
+  padding: 24px 0px;
+  width: 91%;
+  display: flex;
+  justify-content: space-between;
 }
