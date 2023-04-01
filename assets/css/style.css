@@ -189,9 +189,23 @@ footer span {
   font-size: 14px;
   font-weight: 400;
 }
-.internal-grid {
+.internal-grid a,
+img {
   display: grid;
+  width: 85.4%;
+  gap: 20px;
   grid-template-columns: repeat(2, 1fr);
-  grid-auto-rows: minmax(100px, auto);
-  column-gap: 44px;
+}
+.internal-main-image {
+  max-width: 810px;
+  margin: auto;
+  height: 732px;
+}
+.box {
+  max-width: 786px;
+  margin: auto;
+  height: 732px;
+}
+.internalcontainer {
+  position: absolute;
 }

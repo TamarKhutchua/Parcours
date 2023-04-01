@@ -1,0 +1,31 @@
+@media (width <= 768px) {
+  header ul {
+    display: none;
+  }
+  .main-photo {
+    display: grid;
+    width: 100%;
+    gap: 20px;
+    grid-template-columns: 1fr;
+    grid-template-areas: "banner" "location";
+  }
+  .form-row {
+    display: grid;
+    width: 100%;
+    gap: 20px;
+    grid-template-columns: 1fr;
+    grid-template-areas: "banner" "location";
+  }
+  .villas {
+    display: grid;
+    width: 100%;
+    gap: 20px;
+    grid-template-columns: 1fr;
+    grid-template-areas: "banner" "location";
+  }
+  .footer-container-left,
+  .footer-container-right {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
