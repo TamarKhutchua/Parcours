@@ -199,8 +199,12 @@ article h4 {
   opacity: 1;
 }
 article hr {
-  margin-top: 16px;
-  border: 1px solid #cfead6;
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 32px auto;
+  border-bottom: 1px solid#CFEAD6;
+  border-radius: 2px;
 }
 .details {
   padding: 24px 0px;
