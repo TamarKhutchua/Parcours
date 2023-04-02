@@ -3,12 +3,63 @@
   li {
     display: none;
   }
-  .villas {
+  header {
+    max-width: 335px;
+    width: 100%;
+    margin: auto;
+    align-content: center;
+  }
+  .search-loop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Houses .navsearch {
     display: grid;
+    width: 100%;
     grid-template-columns: 1fr;
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .Houses .villas {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .villas article {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
   }
   .villas article:last-child {
     display: none;
+  }
+  .parent-grid {
+    max-width: fit-content;
+    width: 100%;
+  }
+  .navsearch {
+    max-width: 335px;
+    width: 100%;
+    height: 435px;
+    margin: auto;
+    align-content: center;
+  }
+  .navsearch h2 {
+    font-size: 24px;
+  }
+  .navsearch label {
+    display: none;
+  }
+  .trend {
+    max-width: 335px;
+    width: 100%;
+    margin: auto;
+    align-content: center;
+    padding-top: 32px;
+    padding-bottom: 16px;
   }
   footer {
     background: none;

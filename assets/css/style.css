@@ -10,6 +10,9 @@ ul {
 body {
   background-color: #c4c4c4;
 }
+.search-loop {
+  display: none;
+}
 .form-row,
 .form-row-price {
   margin-top: 10px;
