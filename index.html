@@ -7,13 +7,21 @@
     <link rel="stylesheet" href="assets/css/font.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/media.css" />
+    <meta name="description" content="this page is about villas" />
+    <meta name="keywords" content="Find the house you want easily" />
+    <meta name="author" content="Tamar Khutchua" />
+
+    <meta
+      property="og:url"
+      content="https://github.com/tamarkhutchua/Parcours.git"
+    />
     <title>Parcours</title>
   </head>
   <body>
     <header>
       <div class="container">
         <div class="nav-wrapper">
-          <a href="#">
+          <a href="index.html">
             <img src="assets/images/apartment 1.svg" alt="logo-icon" />
           </a>
           <nav class="navbar">
@@ -42,8 +50,11 @@
       <div class="parent-grid">
         <aside>
           <h2>Location</h2>
-          <select name="country" id="country">
+          <select class="country" name="country" id="country">
             <option value="0">All Kenya</option>
+            <option value="1">All Georgia</option>
+            <option value="2">All Italy</option>
+            <option value="3">Others</option>
           </select>
           <h1>Property</h1>
           <div class="form-row">
@@ -126,17 +137,21 @@
             <label for="list"> 6 - 55 M <span>• 2183 ads</span> </label>
           </div>
         </aside>
-        <div class="main-photo">
-          <img src="assets/images/Rectangle 400.png" alt="Nairobi" />
-          <p>Find the house you want easily</p>
-          <p>Buy, sell, rent or lease on just one platform</p>
-        </div>
         <div class="navsearch">
-          <img src="assets/images/Rectangle 537.png" alt="box" />
-          <img src="assets/images/Frame 3.svg" alt="loop" />
+          <h2>Find the house you want easily</h2>
+          <p>Buy, sell, rent or lease on just one platform</p>
+          <label for="search">
+            <input
+              type="text"
+              name="search"
+              id="search"
+              placeholder="search..."
+            />
+            <img class="vec-ph" src="assets/images/Frame 3.svg" alt="loop" />
+          </label>
         </div>
       </div>
-      <h1>Trending ads</h1>
+      <h1 class="trend">Trending ads</h1>
       <div class="villas">
         <article>
           <a href="internal.html" target="_blank">

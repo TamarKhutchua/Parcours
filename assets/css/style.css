@@ -10,9 +10,18 @@ ul {
 body {
   background-color: #c4c4c4;
 }
+.form-row,
+.form-row-price {
+  margin-top: 10px;
+  color: #000000;
+  font-size: 14px;
+}
 .form-row span,
 .form-row-price span {
   opacity: 0.5;
+}
+input:checked {
+  accent-color: green;
 }
 .container {
   max-width: 1920px;
@@ -40,6 +49,7 @@ body {
 .navbar li:last-child {
   padding: 13px 26px;
   background-color: #29b24e;
+  border-radius: 12px;
 }
 .navbar a {
   font-size: 20px;
@@ -54,16 +64,69 @@ body {
   column-gap: 52px;
   row-gap: 36px;
 }
-.main-photo {
-  grid-column: 2 / span 3;
+.country {
+  width: 100%;
+  height: 48px;
+  font-family: "poppins", sans-serif;
+  font-size: 14px;
+  color: #000000;
+  padding: 13px 18px;
+  margin-top: 16px;
+  border-radius: 10px;
+  border: 1px solid rgba(13, 156, 164, 0.21);
+}
+.navsearch {
+  min-width: 335px;
+  grid-area: banner;
+  grid-column: 2 / span3;
   grid-row: 1 / span2;
+  background-image: url(../images/Rectangle\ 400.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 24px;
+  box-shadow: 0px 4px 25px rgba(194, 194, 194, 0.31);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.navsearch h2 {
+  color: #000000;
+  opacity: 0.8;
+  font-family: "poppins" sans-serif;
+  font-size: 48px;
+  margin-top: 60px;
+}
+.container-right p {
+  color: #000000;
+  opacity: 0.8;
+  font-family: "poppins" sans-serif;
+  font-size: 16px;
+  margin-top: 10px;
+}
+.navsearch label {
   position: relative;
 }
-.main-photo p {
+.vec-ph {
   position: absolute;
+  top: 52px;
+  right: 15px;
+  max-width: 18px;
 }
-.navsearch img {
-  position: absolute;
+.navsearch input {
+  padding: 13px 24px 13px 24px;
+  border-radius: 10px;
+  background-color: #f8f8f8cc;
+  border: 0px;
+  outline: none;
+  box-shadow: 0px 4px 10px rgba(124, 124, 124, 0.27);
+  max-width: 324px;
+  margin-top: 40px;
+}
+.trend {
+  margin-top: 32px;
+  margin-bottom: 20px;
 }
 .villas {
   display: grid;
@@ -98,13 +161,13 @@ article img {
   top: 12px;
 }
 .bookmark {
-  padding: 20px;
+  padding: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
-  right: 4px;
-  bottom: -20px;
+  right: 12px;
+  top: 140px;
   background-color: #ffffff;
   box-shadow: -2px 4px 20px rgba(109, 109, 109, 0.25);
   border-radius: 50%;
@@ -112,13 +175,11 @@ article img {
 article h3 {
   margin: 0px 20px 0px 20px;
   font-size: 16px;
-  font-family: "Poppins", sans-serif;
   color: #000000;
 }
 article h4 {
   margin: 8px 20px 0px 20px;
   font-size: 14px;
-  font-family: "Poppins", sans-serif;
   color: #000000;
   opacity: 0.5;
 }
@@ -130,7 +191,6 @@ article h4 {
 .price span {
   color: #29b24e;
   font-size: 24px;
-  font-family: "Poppins", sans-serif;
 }
 .price p {
   color: #000000;
