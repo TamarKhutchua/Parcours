@@ -465,3 +465,6 @@ footer span {
   width: 95%;
   margin-left: auto;
 }
+.mobileversion {
+  display: none;
+}

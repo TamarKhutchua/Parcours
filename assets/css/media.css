@@ -1,35 +1,29 @@
 @media (width <= 768px) {
-  header ul {
+  header ul,
+  li {
     display: none;
-  }
-  .main-photo,
-  aside {
-    display: grid;
-    width: 100%;
-    gap: 20px;
-    grid-template-columns: 1fr;
-  }
-  .form-row {
-    display: grid;
-    width: 100%;
-    gap: 20px;
-    grid-template-columns: 1fr;
   }
   .villas {
     display: grid;
-    width: 100%;
-    gap: 20px;
     grid-template-columns: 1fr;
   }
-  .footer-container-left,
-  .footer-container-right {
-    display: grid;
-    grid-template-columns: 1fr;
+  .villas article:last-child {
+    display: none;
+  }
+  footer {
+    background: none;
   }
   footer p {
     display: none;
   }
-  .bottom {
+  footer span {
+    display: none;
+  }
+  footer hr {
+    display: none;
+  }
+  .mobileversion {
     display: flex;
+    justify-content: center;
   }
 }
