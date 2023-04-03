@@ -59,30 +59,32 @@
     display: flex;
     justify-content: space-between;
   }
-  .Houses .navsearch {
-    display: grid;
+  .section-container-left {
+    max-width: 335px;
     width: 100%;
-    grid-template-columns: 1fr;
-    grid-column: 1;
-    grid-row: 1;
-  }
-  .Houses .villas {
-    display: grid;
-    width: 100%;
-    grid-template-columns: 1fr;
-    grid-column: 1;
-    grid-row: 1;
-  }
-  .villas article {
-    display: flex;
-    flex-direction: column;
+    height: 316px;
     margin: auto;
   }
-  .villas article {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  .section-container-right {
+    max-width: 375px;
+    width: 100%;
+    height: 1060px;
     margin: auto;
+  }
+  .ads {
+    max-width: 335px;
+    width: 100%;
+    margin: auto;
+    align-content: center;
+    margin-top: 72px;
+    margin-bottom: 16px;
+  }
+  .villas {
+    display: flex;
+    justify-content: space-around;
+    max-width: 335px;
+    width: 100%;
+    margin-bottom: 74px;
   }
   .villas article:nth-child(odd) {
     display: none;
@@ -90,8 +92,12 @@
   .villas article:nth-child(2) {
     display: none;
   }
+  article h3 {
+    display: flex;
+  }
   footer {
     background: none;
+    margin-top: 74px;
   }
   footer p {
     display: none;
